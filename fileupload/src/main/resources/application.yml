@@ -1,0 +1,19 @@
+server:
+  port: 80
+  servlet:
+    context-path: /springboot
+
+#
+spring:
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+      #修改上传文件的大小
+  servlet:
+    multipart:
+      max-request-size: 5MB #控制文件上传大小的限制
+      max-file-size: 5MB #实际上传文件的大小
+
+
+
